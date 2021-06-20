@@ -2,6 +2,7 @@
 //<h1> for a title and a <p> for the content.
 
 import React from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 //7. Implement the delete note functionality.
 //- Callback from the Note component to trigger a delete function.
@@ -16,7 +17,7 @@ function Note(props) {
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleDelete}>DELETE</button>
+      <button onClick={handleDelete}><DeleteIcon/></button>
     </div>
   );
 }
